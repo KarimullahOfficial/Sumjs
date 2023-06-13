@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iron Calculator</title>
+  </head>
+  <link rel="stylesheet" href="../css/all.min.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <body>
+    <section class="wrapper">
+      <div class="container">
+        <h3 class="text-dark fw-bolder fs-4 text-center">Sum Number</h3>
+        <div class="alert alert-success" role="alert">
+          <h6 class="alert-heading" id="type">Alert</h6>
+          <p id="message">Please fill the following credentials.</p>
+          <p class="mb-0" id="reason"></p>
+        </div>
+        <div class="input-group flex-nowrap mt-5">
+          <span class="input-group-text" id="addon-wrapping "> NumberOne </span>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Enter NumberOne"
+            aria-label="Username"
+            aria-describedby="addon-wrapping"
+            id="textname"
+          />
+        </div>
+        <div class="input-group flex-nowrap mt-5">
+          <span class="input-group-text" id="addon-wrapping">Numbertwo</span>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Enter Nubmer Two"
+            aria-label="Email"
+            aria-describedby="addon-wrapping"
+            id="emailname"
+          />
+        </div>
+
+        <div class="input-group flex-nowrap mt-5">
+          <span class="input-group-text" id="addon-wrapping"> Number3 </span>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Enter Number3"
+            aria-label="Date"
+            aria-describedby="addon-wrapping"
+            id="dateofbirth"
+          />
+        </div>
+        <div class="input-group flex-nowrap mt-5">
+          <span class="input-group-text" id="addon-wrapping"> Result</span>
+          <input
+            type=""
+            class="form-control"
+            placeholder="Result"
+            aria-label="Address"
+            aria-describedby="addon-wrapping"
+            id="address"
+          />
+        </div>
+
+        <div
+          class="btn btn-primary w-25 m-auto mt-4 d-flex justify-content-center"
+          onclick="insert()"
+        >
+          Submit
+        </div>
+        <div class="detail text-center mt-5">
+          <h4>Detail</h4>
+        </div>
+        <table class="table border-dark table-bordered table-responsive">
+          <thead>
+            <tr>
+              <th scope="col">NumberOne</th>
+              <th scope="col">Numbertwo</th>
+              <th scope="col">Number3</th>
+              <th scope="col">Result</th>
+            </tr>
+          </thead>
+          <tbody id="tablletext"></tbody>
+        </table>
+      </div>
+    </section>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/font.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/swiper-bundle.esm.browser.min.js"></script>
+  </body>
+</html>
